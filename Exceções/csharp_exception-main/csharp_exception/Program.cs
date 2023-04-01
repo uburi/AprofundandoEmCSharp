@@ -3,6 +3,10 @@ using csharp_exception.Contas;
 using System;
 using csharp_exception;
 
+
+LeitorDeArquivo leitor = new LeitorDeArquivo("contas.txt");
+leitor.LerProximaLinha();
+
 try
 {
     ContaCorrente conta1 = new ContaCorrente(278, "1234-X");

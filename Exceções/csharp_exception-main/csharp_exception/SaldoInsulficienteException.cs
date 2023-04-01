@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace csharp_exception
 {
-    public class SaldoInsulficienteException : Exception
+    public class SaldoInsulficienteException : OperacaoFinanceiraException
     {
-        public SaldoInsulficienteException()
-        {
-
-        }
         public SaldoInsulficienteException(string mensagem) : base(mensagem)
         {
 
