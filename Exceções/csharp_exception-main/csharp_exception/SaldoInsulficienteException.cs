@@ -8,6 +8,10 @@ namespace csharp_exception
 {
     public class SaldoInsulficienteException : Exception
     {
+        public SaldoInsulficienteException()
+        {
+
+        }
         public SaldoInsulficienteException(string mensagem) : base(mensagem)
         {
 
