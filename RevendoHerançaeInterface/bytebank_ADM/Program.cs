@@ -2,6 +2,7 @@
 using bytebank_ADM.Parceria;
 using bytebank_ADM.SistemaInterno;
 using bytebank_ADM.Utilitario;
+using System;
 
 #region
 //Funcionario pedro = new Funcionario("123456789", 2000);
