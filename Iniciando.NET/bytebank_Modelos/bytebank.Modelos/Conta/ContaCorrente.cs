@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace bytebank.Modelos.Conta
 {
-    public class ContaCorrente:IComparable<ContaCorrente>
+    public class ContaCorrente:IComparable<ContaCorrente> 
     {     
+        private ContaCorrente() { }
        
         public Cliente Titular{get;set;}
         public string Nome_Agencia{ get; set; }
