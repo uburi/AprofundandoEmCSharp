@@ -43,7 +43,7 @@ public class FilmeController : ControllerBase
     [HttpGet("{id}")]
     public IActionResult RecuperaFilmePorId(int id)
     {
-       var filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
+        var filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
         if (filme == null) return NotFound();
         var filmeDto = _mapper.Map<ReadFilmeDto>(filme);
         return Ok(filmeDto);
